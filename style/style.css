@@ -74,7 +74,7 @@ header{
 /*----------------------------HEADER CONTENT--------------------------*/
 .header_content{
     color: #FFFFFF;
-    font-family: var(--type-font);;
+    font-family: var(--type-font);
     font-style: normal;
     width: 1230px;
     margin: 0px auto;
@@ -101,3 +101,63 @@ header{
     line-height: 74px;
     letter-spacing: 0.02em;
 }
+
+/*----------------------------MAIN CONTENT--------------------------*/
+.main_content{
+    height: 2245px;
+}
+
+.main_content_top{
+    width: 1181px;
+    height: 251px;
+    margin: 0 auto;
+}
+
+.main_content_top h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+    font-family: var(--type-font);
+}
+
+.main_content_top p{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+    font-family: var(--type-font);
+}
+
+/*----------------------------------------------FOOTER---------------------------------------------*/
+footer{
+    height: 223px;
+    background: #30292F;
+}
+
+.footer_box{
+    width: 1202px;
+    height: 159px;
+    margin: 0 auto;
+    padding-top: 62px;
+    
+}
+.footer_box_top{
+    height: 90px;
+    border-bottom: 1px solid rgba(218, 218, 218, 0.43);
+}
+
+.box_top_contact a{
+    font-family: Avenir;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
