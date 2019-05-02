@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Avenir;
+    src: url(../font/Avenir.otf); 
+   }
+
+
 :root{
     --type-font: Nunito;
 }
@@ -79,8 +85,6 @@ header{
     width: 1230px;
     margin: 0px auto;
     margin-top: 100px;
-
-
 }
 
 .header_content h1{
@@ -94,8 +98,6 @@ header{
 .header_content > p{
     width: 655px;
     height: 185px;
-
-    
     font-weight: 600;
     font-size: 36px;
     line-height: 74px;
@@ -136,6 +138,68 @@ header{
     font-family: var(--type-font);
 }
 
+/*----------------------------MAIN CONTENT ONE--------------------------*/
+
+.main_content_one{
+    display: flex;
+    justify-content: space-between;
+    height: 643px;
+    position: relative;
+    
+}
+
+.content_one_left-img{
+    width: 360px;
+    height: 380px;
+    background-image: url(../img/point_bg.png);
+    position: absolute;
+    left: 250px;
+    top: 0px;
+}
+
+.one_left-text{
+    width: 530px;
+    height: 125px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    color: #076572;
+    /* position: relative;
+    top: -140px;
+    left: 60px; */
+}
+
+.one_left-more{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+    /* position: relative;
+    top: -80px;
+    left: 60px; */
+}
+.one_left-more img{
+    position: relative;
+    width: 22px;
+    height: 20px;
+    top: 3px;
+
+}
+
+.content_one_right img[src="../pageLanding/img/crypto_hand.png"]{
+    /* position: relative;
+    top: 100px;
+    left: 30px; */
+}
+.content_one_right img[src="../pageLanding/img/coins.png"]{
+    /* position: relative;
+    top: 240px;
+    left: -70px; */
+}
+
 /*----------------------------------------------FOOTER---------------------------------------------*/
 footer{
     height: 223px;
@@ -155,9 +219,22 @@ footer{
 }
 
 .box_top_contact a{
+    display: block;
     font-family: Avenir;
     font-size: 18px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
 }
 
+.footer_box_top p{
+    font-family: Avenir;
+    width: 345px;
+    height: 31px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
