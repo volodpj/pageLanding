@@ -65,17 +65,33 @@ header{
 
 
 
-.top_header_nav > ul li{
+/* .top_header_nav > ul li{
     width: 90px;
     height: 30px;
     border-radius: 4px;
     display: block;
-}
+} */
 
 .top_header_nav > ul li a{
     color: #FFFFFF;
-    font-family: var(--type-font);;
+    font-family: var(--type-font);
+    width: 90px;
+    height: 30px;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    padding-top: 6px;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
+
+.top_header_nav > ul li a:hover{
+  
+    color: #1B264B;
+    background: #FDFFFC;
+   
+}
+
 
 /*----------------------------HEADER CONTENT--------------------------*/
 .header_content{
@@ -106,7 +122,13 @@ header{
 
 /*----------------------------MAIN CONTENT--------------------------*/
 .main_content{
-    height: 2245px;
+    /* height: 2245px; */
+}
+
+.points_field{
+    width: 360px;
+    height: 380px;
+    background-image: url(../img/point_bg.png);
 }
 
 .main_content_top{
@@ -140,21 +162,41 @@ header{
 
 /*----------------------------MAIN CONTENT ONE--------------------------*/
 
+
+
 .main_content_one{
     display: flex;
     justify-content: space-between;
-    height: 643px;
+    height: 550px;
     position: relative;
+    padding-top: 110px;
     
 }
 
-.content_one_left-img{
-    width: 360px;
-    height: 380px;
-    background-image: url(../img/point_bg.png);
+.content_one_left{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+}
+
+.content_one_right{
+    width: 720px;
+    padding-top: 30px;
+    position: relative;
+    
+}
+.one_left_content{
+    height: 300px;
+    width: 500px;
+}
+
+.content_one-img{
     position: absolute;
-    left: 250px;
-    top: 0px;
+    left: 60px;
+    bottom: 60px;
 }
 
 .one_left-text{
@@ -189,16 +231,104 @@ header{
 
 }
 
-.content_one_right img[src="../pageLanding/img/crypto_hand.png"]{
-    /* position: relative;
-    top: 100px;
-    left: 30px; */
-}
 .content_one_right img[src="../pageLanding/img/coins.png"]{
-    /* position: relative;
-    top: 240px;
-    left: -70px; */
+    position: absolute;
+    top: 150px;
+    left: 230px;
 }
+
+/*--------------------------------------------MAIN CONTENT TWO---------------------------------------------*/
+
+.main_content_two{
+    height: 645px;
+    background: #FAFAFA;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 137px;
+}
+.content_two-img{
+    position: absolute;
+    left: 118px;
+    top: 72px;
+}
+
+.content_two_left{
+    position: relative;
+    z-index: 1;
+}
+
+.two_right_title{
+    width: 552px;
+    height: 249px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 68px;
+    color: #076572;
+    margin-bottom: 20px;
+}
+
+.two_right_text{
+    width: 519px;
+    height: 68px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+/*--------------------------------------------MAIN CONTENT THREE---------------------------------------------*/
+.main_content_three{
+    height: 640px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+.content_three-img{
+    position: absolute;
+    left: calc(50% - 180px);
+    top: calc(50% - 190px);
+}
+
+.content_three_left{
+    padding-top: 20px;
+}
+
+.three_left_title{
+    width: 479px;
+    height: 125px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 68px;
+    color: #076572;
+    margin-bottom: 20px;
+}
+
+.three_left_text{
+    width: 519px;
+    height: 28px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    color: #282D32;
+    margin-bottom: 98px;
+}
+
+
+
+
 
 /*----------------------------------------------FOOTER---------------------------------------------*/
 footer{
@@ -216,6 +346,8 @@ footer{
 .footer_box_top{
     height: 90px;
     border-bottom: 1px solid rgba(218, 218, 218, 0.43);
+    display: flex;
+    justify-content: space-between;
 }
 
 .box_top_contact a{
@@ -237,4 +369,61 @@ footer{
     line-height: 33px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+}
+
+.box_top_form{
+    width: 265px;
+}
+
+.box_top_form p{
+    font-family: Avenir;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.box_top_form form input[type="email"]{
+    height: 48px;
+    width: 178px;
+    border: none;
+    padding: 14px 19px;
+    box-sizing: border-box;
+    font-family: Avenir;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(62, 61, 61, 0.5);
+}
+
+.box_top_form form input[type="submit"]{
+    height: 48px;
+    width: 80px;
+    border: none;
+    padding: 0px;
+    background: #1768AC;
+    border-radius: 3px;
+    font-family: Avenir;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    position: relative;
+    left: -3px;
+}
+
+.footer_box_bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.footer_box_bottom a{
+    margin-left: 17px;
+    font-family: Avenir;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer_box_bottom a:first-child{
+    margin: 0;
 }
