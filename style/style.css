@@ -64,14 +64,6 @@ header{
 }
 
 
-
-/* .top_header_nav > ul li{
-    width: 90px;
-    height: 30px;
-    border-radius: 4px;
-    display: block;
-} */
-
 .top_header_nav > ul li a{
     color: #FFFFFF;
     font-family: var(--type-font);
@@ -80,9 +72,9 @@ header{
     border-radius: 4px;
     display: block;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 7px;
     box-sizing: border-box;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 .top_header_nav > ul li a:hover{
@@ -121,9 +113,7 @@ header{
 }
 
 /*----------------------------MAIN CONTENT--------------------------*/
-.main_content{
-    /* height: 2245px; */
-}
+
 
 .points_field{
     width: 360px;
@@ -207,9 +197,7 @@ header{
     font-weight: normal;
     font-size: 45px;
     color: #076572;
-    /* position: relative;
-    top: -140px;
-    left: 60px; */
+
 }
 
 .one_left-more{
@@ -219,9 +207,7 @@ header{
     font-size: 24px;
     line-height: 33px;
     color: #333333;
-    /* position: relative;
-    top: -80px;
-    left: 60px; */
+ 
 }
 .one_left-more img{
     position: relative;
